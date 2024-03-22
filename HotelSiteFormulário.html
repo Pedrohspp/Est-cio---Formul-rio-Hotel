@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Hotel</title>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" media="screen" href="Css.css">
+    <header class="header">
+        <img class="logo" src="ogo.jpg">
+        <h1 class="titulo">Mineirinho</h1>
+    </header>
+    <div class="imagens">
+        <img src="minas.jpg" style="width: 350px; height: auto;">
+        <img src="minasthree.jpg" style="width: 400px; height: auto;">
+        <img src="minastwo.jpg" style="width: 350px; height: auto;">
+    </div>
+    <div class="container">
+        <h1 class="Forms">Formulário</h1>
+        <form>
+            <label for="Nome">Informe seu nome:</label>
+            <input type="text" id="Nome" name="Fname">
+
+            <form class="sexo">
+                <label for="sexo">Informe o seu sexo:</label>
+                <label for="m">Masculino</label>
+                <input type="radio" id="m" name="opcao" value="m">
+                <label for="f">Feminino</label>
+                <input type="radio" id="f" name="opcao" value="f">
+            </form>
+
+            <label for="Email">Digite seu email:</label>
+            <input type="text" id="email" name="Femail">
+
+            <label for="Data">Escolha a data da hospedagem:</label>
+            <input type="date" id="data-chegada" name="data-chegada">
+
+            <label for="Noite">Número de noites que deseja ficar:</label>
+            <select id="noites" name="noites">
+                <option value="nada">Nada selecionado</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <label for="Hospedes">Hóspedes:</label><br>
+            <label for="Adultos">Adultos:</label>
+            <select id="hospedes" name="hospedes">
+                <option value="nada">Nada selecionado</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <label for="Crianças">Crianças:</label>
+            <select id="Crianças" name="Crianças">
+                <option value="nada">Nenhuma</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+
+            <table border="1px">
+                <caption>Tabela de preços:</caption>
+                <tr>
+                    <th>Número do quarto</th>
+                    <th>Tipo de Quarto</th>
+                    <th>Preço por Noite</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Quarto 1 cama</td>
+                    <td>R$ 100,00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Quarto 2 camas</td>
+                    <td>R$ 150,00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Suíte Casal</td>
+                    <td>R$ 200,00</td>
+                </tr>
+            </table>
+            <label for="comentário">Todas nossas camas são de casal, para oferecer um maior conforto aos clientes.</label>
+
+            <label for="Noite">Selecione o Quarto:</label>
+            <select id="noites" name="noites">
+                <option value="nada">Nada selecionado</option>
+                <option value="1">1 - R$ 100,00</option>
+                <option value="2">2 - R$ 150,00</option>
+                <option value="3">3 - R$ 200,00</option>
+            </select>
+
+            <label for="mensagem">Deseja deixar algum comentário?:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+            <form class="promocoes">
+                <label for="promocoes">Deseja receber promoções em seu email?</label>
+                <div class="radio-group">
+                    <label for="s">Sim</label>
+                    <input type="radio" id="s" name="opcao" value="s">
+                    <label for="n">Não</label>
+                    <input type="radio" id="n" name="opcao" value="n">
+                </div>
+            </form>
+            <form class="enviar">
+                <input type="submit" value="Enviar">
+            </form>             
+        </form>
+    </div>   
+    <div class="footer">Copyright Notice: © HotelMineirinho 2024 e suas entidades relacionadas. Todos os direitos reservados.</div>
+</body>
+</html>    
