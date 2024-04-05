@@ -1,26 +1,19 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
         }
 
         .header {
-            background-color: #3d3d3d; 
-            border-radius: 3px;
+            background-color: rgb(43, 43, 43); 
             color: #fff; 
             text-align: center; 
-            padding: 10px 0; 
-            padding-top: -1px;
-            border-bottom: 2px solid #fff;
         }
-        
         .logo {
             width: 150px; 
             height: auto; 
             margin: 0 auto;
             filter: invert(100%);
         }
-        
         .titulo {
             font-family: 'Caveat', cursive; 
             display: inline-block; 
@@ -30,14 +23,44 @@
             margin-bottom: 0;
             text-align: center;
         }
-        .imagens {
-            border-radius: 3px;
-            display: flex;
-            justify-content: center;
-            align-items: center; 
-            gap: 8px; 
+        #Barra{
+            background-color: rgb(46, 45, 45);
+            color: #fff;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            text-align: center;
+            margin-bottom: 10px;
         }
-        
+        #Barra ul{
+            list-style: none;
+            padding: 0px;
+        }
+        #Barra ul li{
+            display: inline;
+
+        }
+        #Barra ul li a{
+            display: inline;
+            padding: 19px;
+            color: #fff;
+            text-decoration: none;
+        }
+        #Barra ul li a:hover{
+            background-color: rgb(37, 37, 37);
+            transition: background .3s;
+        }
+        #imagens{
+            text-align: center;
+        }
+        #imagens img{
+            padding: 0px;
+            border-radius: 5px;
+            display: inline-block;
+            width: 430px;
+            height: 330px;
+            object-fit: cover;
+            margin: 0 5px;
+        }
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -102,19 +125,17 @@
         input[type="submit"]:hover {
             background-color: #555;
         }      
-        .sexo {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-        
+        .sexo label{
+            display: inline;
+            margin-right: -5px;
+        }   
         .promocoes {
             text-align: left;
         }
         
-        .radio-group {
+        .radio-group label {
             display: inline-block;
-            margin-left: 10px;
+            margin-right: -5px;
         }
         
         label {
@@ -145,4 +166,4 @@
         
         input[type="submit"]:hover {
             background-color: #555;
-        }        
+        }     
