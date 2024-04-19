@@ -9,10 +9,20 @@ body {
     text-align: center; 
 }
 .logo {
-    width: 150px; 
+    width: 200px; 
     height: auto; 
     margin: 0 auto;
-    filter: invert(100%);
+}
+.Imagens{
+    text-align: center;
+    padding: 0px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 430px;
+    height: 330px;
+    object-fit: cover;
+    margin: 0 5px;
+    margin-bottom: 20px;
 }
 .titulo {
     font-family: 'Caveat', cursive; 
