@@ -13,7 +13,7 @@ body {
     height: auto; 
     margin: 0 auto;
 }
-.Imagens{
+.imagens{
     text-align: center;
     padding: 0px;
     border-radius: 5px;
@@ -32,6 +32,32 @@ body {
     margin-top: 0px;
     margin-bottom: 0;
     text-align: center;
+}
+#Barra{
+    background-color: rgb(46, 45, 45);
+    color: #fff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#Barra ul{
+    list-style: none;
+    padding: 0 px;
+}
+#Barra ul li{
+    display: inline;
+
+}
+#Barra ul li a{
+    display: inline;
+    padding: 19px;
+    color: #fff;
+    text-decoration: none;
+}
+#Barra ul li a:hover{
+    background-color: rgb(37, 37, 37);
+    transition: background .3s;
 }
 nav ul {
     list-style-type: none;
