@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="CssF.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<header class="header">
+    <a href="index.html"><img class="logo" src="Imagens/logo2.png"></a>
+</header>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Formulário de Reserva de Hotel</h2>
+        <form id="reservationForm" action="process.php" method="post" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+                <div class="invalid-feedback">
+                    Por favor, insira seu nome.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF:</label>
+                <input type="text" class="form-control" id="cpf" name="cpf" required>
+                <div class="invalid-feedback">
+                    Por favor, insira seu CPF.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="Data" class="form-label">Data da entrada:</label>
+                <input type="date" class="form-control" id="data-chegada" name="data-chegada">
+            </div>
+            <div class="mb-3">
+                <label for="days" class="form-label">Número de dias:</label>
+                <input type="number" class="form-control" id="days" name="days" required>
+                <div class="invalid-feedback">
+                    Por favor, insira o número de dias.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="total" class="form-label">Valor Total</label>
+                <input type="text" class="form-control" id="total" name="total" readonly>
+            </div>
+            <div class="mb-3">
+                <label class="form-check-label">Deseja receber promoções em seu email?</label>
+                <div>
+                    <input class="form-check-input" type="radio" id="s" name="opcao" value="s">
+                    <label for="s">Sim</label>
+                    <input class="form-check-input" type="radio" id="n" name="opcao" value="n">
+                    <label for="n">Não</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Reservar</button>
+            <p id="mensagem" style="display: none; color: green;">Pedido de reserva feito com sucesso!</p>
+        </form>
+    </div>
+    <br>
+    <div class="footer">Copyright Notice: © HotelMineirinho 2024 e suas entidades relacionadas. Todos os direitos reservados.</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

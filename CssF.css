@@ -1,0 +1,76 @@
+.header {
+    background-color: rgb(43, 43, 43); 
+    color: #fff; 
+    text-align: center; 
+}
+.header a {
+    margin-right: 220px;
+}
+#Barra{
+    background-color: rgb(46, 45, 45);
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+}
+#Barra ul{
+    margin-left: 536px;
+    list-style: none;
+    padding: 0 px;
+}
+#Barra ul li{
+    display: inline;
+
+}
+#Barra ul li a{
+    display: inline;
+    padding: 19px;
+    color: #fff;
+    text-decoration: none;
+}
+.logo {
+    width: 200px; 
+    height: auto; 
+    margin: 0 auto;
+    margin-left: 230px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.invalid-feedback {
+    display: none;
+}
+
+input:invalid ~ .invalid-feedback {
+    display: block;
+}
+.footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#mensagem {
+    font-size: 14px;
+    margin-top: 10px;
+}
